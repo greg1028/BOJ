@@ -8,18 +8,14 @@ int main() {
 
     bool isPrime[250000] ={0,};
 
-    for (int i = 0; i < 250000; i++){
-        isPrime[i] = 1;
-    }
+    for (int i = 0; i < 250000; i++) isPrime[i] = 1;
 
     isPrime[0] = 0;
     isPrime[1] = 0;
 
     for (int i = 2; i < 250000; i++){
         if (isPrime[i]){
-            for (int j = i+i; j<250000; j += i){
-                isPrime[j] = false;
-            }
+            for (int j = i+i; j < 250000; j += i) isPrime[j] = false;
         }
     }
 
