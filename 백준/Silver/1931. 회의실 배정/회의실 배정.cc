@@ -18,12 +18,11 @@ int main(){
         meeting.push_back(make_pair(end, srt));
     }
     sort(meeting.begin(), meeting.end());
-
-    srt = 0, end = 0;
+    
+    end = 0;
 
     for (int i = 0; i < N; i++){
         if (end <= meeting[i].second){
-            srt = meeting[i].second;
             end = meeting[i].first;
             cnt++;
         }
