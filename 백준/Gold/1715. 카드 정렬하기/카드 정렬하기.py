@@ -1,4 +1,7 @@
 import heapq
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 cards = []
 res = 0
