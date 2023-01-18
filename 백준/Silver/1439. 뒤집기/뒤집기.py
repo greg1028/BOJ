@@ -5,4 +5,4 @@ for i in range(len(char) - 1):
     if char[i] != char[i+1]:
         cnt += 1
 
-print(int(cnt/2))
+print(cnt//2)
