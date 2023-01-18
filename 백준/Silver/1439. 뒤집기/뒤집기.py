@@ -1,4 +1,4 @@
-char = list(map(int, input()))
+char = input()
 
 cnt = 1
 for i in range(len(char) - 1):
